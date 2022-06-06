@@ -78,7 +78,6 @@ const handlerInputEvent = event => {
 const createDivElements = () => {
   const counter = elementsCount + divElements.length;
   for (let i = divElements.length; i < counter; i += 1) {
-    debugger
     const element = `<div style="background-color: ${getRandomHexColor()}; width: ${
       30 + 10 * i
     }px; height: ${30 + 10 * i}px; outline: 1px solid grey"></div>`;
@@ -130,7 +129,6 @@ destroyButtonEl.addEventListener('click', handlerDestroyEvent);
 // const createDivElements = () => {
 // const divElements = [];
 //   for (let i = 0; i < elementsCount; i += 1) {
-//     debugger
 //     const element = `<div style="background-color: ${getRandomHexColor()}; width: ${
 //       30 + 10 * i
 //     }px; height: ${30 + 10 * i}px; outline: 1px solid grey"></div>`;
