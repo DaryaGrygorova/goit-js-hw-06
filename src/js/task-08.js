@@ -11,7 +11,11 @@ const submitFormHandler = event => {
     return alert('Please, fill in all the fields!');
   }
 
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  const submitData = {
+    email: email.value,
+    password: password.value,
+}
+  console.log(submitData);
   event.currentTarget.reset();
 };
 
